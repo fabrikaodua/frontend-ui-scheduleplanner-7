@@ -45,10 +45,15 @@ body {
 	background-size: auto;
 	text-align: center;
 }
+.main-menu ul {
+	font-size: 0;
+	line-height:0;
+	letter-spacing: -1px;
+}
 .menu-list li{
 	display: inline-block;
 	font-size:22px;
-    line-height:normal;
+	line-height:normal;
     letter-spacing:normal;
 }
 .menu-item a {
@@ -80,28 +85,33 @@ body {
 
 /* Media
 -----------------------------------------------------------------------------*/
-@media(max-width:768px){
-	.container {
-	margin: 0 36px;
-}
-}
-@media(max-width:420px){
-	.container {
-	margin: 0 20px;
-}
-}
-@media(max-width:800px){
-	.container {
-	margin: 0 20px;
-}
-}
 @media(max-width:1024px){
 	.container {
 	margin: 0 40px;
 }
 }
-@media(max-width:320px){
+@media(max-width:768px){
+	.container {
+	margin: 0 20px;
+}
+	.menu-item a{
+	padding: 10px 10px;
+}
+	.menu-item {
+	margin: 10px 5px;
+}
+}
+@media(max-width:420px){
 	.container {
 	margin: 0 10px;
 }
+	.menu-list li{
+	font-size:16px;
+	}
 }
+@media(max-width:320px){
+
+}
+
+
+
