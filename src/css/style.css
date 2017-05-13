@@ -38,10 +38,36 @@ body {
 -----------------------------------------------------------------------------*/
 
 
-
-
-
-
+/* Main menu
+-----------------------------------------------------------------------------*/
+.main-menu{
+	background-image: url(../images/bg-main-menu.png);
+	background-size: auto;
+	text-align: center;
+}
+.menu-list li{
+	display: inline-block;
+	font-size:22px;
+    line-height:normal;
+    letter-spacing:normal;
+}
+.menu-item a {
+	text-decoration: none;
+	color: #cdcdcd;
+	display: block;
+	padding: 10px 30px;
+}
+.menu-item {
+	margin: 10px 10px;
+}
+.active a,
+.menu-item a:hover{
+	background-color: #979899;
+	border-radius: 30px;
+	color: #1a1e21;
+}
+/* Main menu END
+-----------------------------------------------------------------------------*/
 
 
 
@@ -62,6 +88,16 @@ body {
 @media(max-width:420px){
 	.container {
 	margin: 0 20px;
+}
+}
+@media(max-width:800px){
+	.container {
+	margin: 0 20px;
+}
+}
+@media(max-width:1024px){
+	.container {
+	margin: 0 40px;
 }
 }
 @media(max-width:320px){
