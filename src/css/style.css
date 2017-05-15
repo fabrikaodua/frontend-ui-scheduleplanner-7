@@ -13,7 +13,7 @@ body {
 	min-width: 320px;
 	max-width: 100%;
 	min-height: 100%;
-	height: auto !important;
+	height: auto ;
 }
 .container {
 	margin: 0 150px;
@@ -37,81 +37,21 @@ body {
 /* Global style END
 -----------------------------------------------------------------------------*/
 
-
-/* Main menu
------------------------------------------------------------------------------*/
-.main-menu{
-	background-image: url(../images/bg-main-menu.png);
-	background-size: auto;
-	text-align: center;
+/*.pagination*/
+.pagination {
 }
-.main-menu ul {
-	font-size: 0;
-	line-height:0;
-	letter-spacing: -1px;
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
 }
-.menu-list li{
-	display: inline-block;
-	font-size:22px;
-	line-height:normal;
-    letter-spacing:normal;
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
 }
-.menu-item a {
-	text-decoration: none;
-	color: #cdcdcd;
-	display: block;
-	padding: 10px 30px;
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
 }
-.menu-item {
-	margin: 10px 10px;
-}
-.active a,
-.menu-item a:hover{
-	background-color: #979899;
-	border-radius: 30px;
-	color: #1a1e21;
-}
-/* Main menu END
------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-/* Media
------------------------------------------------------------------------------*/
-@media(max-width:1024px){
-	.container {
-	margin: 0 40px;
-}
-}
-@media(max-width:768px){
-	.container {
-	margin: 0 20px;
-}
-	.menu-item a{
-	padding: 10px 10px;
-}
-	.menu-item {
-	margin: 10px 5px;
-}
-}
-@media(max-width:420px){
-	.container {
-	margin: 0 10px;
-}
-	.menu-list li{
-	font-size:16px;
-	}
-}
-@media(max-width:320px){
-
-}
-
-
-
+/*.pagination*/
