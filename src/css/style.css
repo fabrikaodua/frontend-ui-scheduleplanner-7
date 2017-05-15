@@ -16,7 +16,9 @@ body {
 	height: auto !important;
 }
 .container {
-	margin: 0 150px;
+	min-width: 320px;
+	max-width: 960px;
+	margin: 0 auto;
 }
 /* Header*/
 .header {
@@ -111,8 +113,55 @@ a.linkedin{
 }
 /* Main menu END
 -----------------------------------------------------------------------------*/
-
-
+/* Teasers section
+-----------------------------------------------------------------------------*/
+.teasers {
+	background-color: #eeeeee;
+	display: block;
+	padding: 60px 0 30px 0;
+}
+.column-teaser {
+	font-size: 0;
+}
+.column-teaser li:first-child {
+	margin-right:60px;
+}
+.block-teaser h2{
+	font-size: 34px;
+	color: #915542;
+	margin-bottom: 20px;
+	line-height: 1.059;
+}
+.block-teaser {
+	position: relative;
+	padding: 0 0 0 190px;
+	min-height: 140px;
+}
+.image-teaser {
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.image-teaser img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	display: block;
+	width: auto;
+	height: 100%;
+	transform: translateX(-50%);
+}
+.inline-block {
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 450px;
+	margin-bottom: 90px;
+}
+/* Teasers section End
+-----------------------------------------------------------------------------*/
 
 
 
@@ -124,14 +173,9 @@ a.linkedin{
 /* Media
 -----------------------------------------------------------------------------*/
 @media(max-width:1024px){
-	.container {
-	margin: 0 40px;
-}
+
 }
 @media(max-width:768px){
-	.container {
-	margin: 0 20px;
-}
 	.menu-item a{
 	padding: 10px 10px;
 }
@@ -140,9 +184,6 @@ a.linkedin{
 }
 }
 @media(max-width:420px){
-	.container {
-	margin: 0 10px;
-}
 	.menu-list li{
 	font-size:16px;
 	}
