@@ -33,7 +33,48 @@ body {
 	max-width: 100%;
 	height: 190px;
 	position: relative;
+	background: url(../images/bg-footer.png);
 }
+.footer .social {
+	float: left;
+	margin-left: 20px;
+	width: 130px;
+}
+
+
+.footer .connect {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer .google-plus{
+	background: url('../images/social-google-plus.png');
+	width: 44px;
+	height: 44px;
+}
+
+a.twitter{
+	background: url('../images/social-twitter.png');
+	width: 44px;
+	height: 44px;
+}
+
+a.facebook{
+	background: url('../images/social-facebook.png');
+	width: 44px;
+	height: 44px;
+}
+
+a.linkedin{
+	background: url('../images/social-linkedin.png');
+	width: 44px;
+	height: 44px;
+}
+
+
+
 /* Global style END
 -----------------------------------------------------------------------------*/
 
