@@ -16,7 +16,9 @@ body {
 	height: auto !important;
 }
 .container {
-	margin: 0 150px;
+	min-width: 320px;
+	max-width: 960px;
+	margin: 0 auto;
 }
 /* Header*/
 .header {
@@ -33,7 +35,45 @@ body {
 	max-width: 100%;
 	height: 190px;
 	position: relative;
+	background: url(../images/bg-footer.png);
 }
+.footer .social {
+	margin-left: 20px;
+}
+
+.footer .connect {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer .google-plus{
+	background: url('../images/social-google-plus.png');
+	width: 44px;
+	height: 44px;
+}
+
+a.twitter{
+	background: url('../images/social-twitter.png');
+	width: 44px;
+	height: 44px;
+}
+
+a.facebook{
+	background: url('../images/social-facebook.png');
+	width: 44px;
+	height: 44px;
+}
+
+a.linkedin{
+	background: url('../images/social-linkedin.png');
+	width: 44px;
+	height: 44px;
+}
+
+
+
 /* Global style END
 -----------------------------------------------------------------------------*/
 
@@ -73,9 +113,10 @@ body {
 }
 /* Main menu END
 -----------------------------------------------------------------------------*/
+<<<<<<< HEAD
 /* Breadcrumb
 -----------------------------------------------------------------------------*/
-breadcrumb { 
+/*breadcrumb { 
   list-style: none; 
   overflow: hidden; 
   font: 18px Sans-Serif;
@@ -125,7 +166,7 @@ padding-top: 15px;
 }
 .breadcrumb li:first-child a {
   /*padding-left: 10px;*/
-  border-radius: 4px 0 0 4px;
+  /*border-radius: 4px 0 0 4px;
   margin-left: 30px;
   
 }
@@ -152,10 +193,63 @@ padding-top: 15px;
 .breadcrumb li a:hover:after { 
   color:black;
   border-left: 15px solid white;
-}
+}*/*/
 
 /*  Breadcrumb END
 -----------------------------------------------------------------------------*/
+=======
+/* Teasers section
+-----------------------------------------------------------------------------*/
+.teasers {
+	background-color: #eeeeee;
+	display: block;
+	padding: 60px 0 30px 0;
+}
+.column-teaser {
+	font-size: 0;
+}
+.column-teaser li:first-child {
+	margin-right:60px;
+}
+.block-teaser h2{
+	font-size: 34px;
+	color: #915542;
+	margin-bottom: 20px;
+	line-height: 1.059;
+}
+.block-teaser {
+	position: relative;
+	padding: 0 0 0 190px;
+	min-height: 140px;
+}
+.image-teaser {
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.image-teaser img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	display: block;
+	width: auto;
+	height: 100%;
+	transform: translateX(-50%);
+}
+.inline-block {
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 450px;
+	margin-bottom: 90px;
+}
+/* Teasers section End
+-----------------------------------------------------------------------------*/
+
+
+>>>>>>> da99c5745aa02a775976c3f0f7304a8abf988556
 
 
 
@@ -165,14 +259,9 @@ padding-top: 15px;
 /* Media
 -----------------------------------------------------------------------------*/
 @media(max-width:1024px){
-	.container {
-	margin: 0 40px;
-}
+
 }
 @media(max-width:768px){
-	.container {
-	margin: 0 20px;
-}
 	.menu-item a{
 	padding: 10px 10px;
 }
@@ -181,9 +270,6 @@ padding-top: 15px;
 }
 }
 @media(max-width:420px){
-	.container {
-	margin: 0 10px;
-}
 	.menu-list li{
 	font-size:16px;
 	}
