@@ -22,14 +22,35 @@ summary {
 
 body {
     height: 100%;
+	font-family: 'Arial Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', Tahoma, sans-serif;
+    font-size: 18px;
 }
-
+  
 .wrapper {
     min-width: 320px;
     max-width: 100%;
     min-height: 100%;
     height: auto !important;
 }
+
+@font-face{
+	font-family: 'Myriad Pro Bold';
+	src:url('../fonts/MyriadPro-Bold.otf')format(opentype);
+}
+/*Typography
+-----------------------------------*/
+h1 {
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	text-transform: uppercase;
+	font-family: 'Myriad Pro Bold' sans-serif;
+}
+h2, h3, h4 {
+	font-family:'Arial Regular', 'Arial', sans-serif;
+}
+
 
 /* Header*/
 
@@ -145,10 +166,10 @@ a.linkedin {
 /* Main menu END
 -----------------------------------------------------------------------------*/
 
-<<<<<<< HEAD
+ HEAD
 /* Breadcrumb
------------------------------------------------------------------------------*/
-/*breadcrumb { 
+/*-----------------------------------------------------------------------------*/
+breadcrumb { 
   list-style: none; 
   overflow: hidden; 
   font: 18px Sans-Serif;
@@ -165,7 +186,7 @@ padding-top: 15px;
   background: hsla(0,0%,53%,1); 
   position: relative; 
   display: block;
-  float: left;
+  
 }
 .breadcrumb li a::after { 
   content: " "; 
@@ -197,8 +218,8 @@ padding-top: 15px;
   z-index: 1; 
 }
 .breadcrumb li:first-child a {
-  /*padding-left: 10px;*/
-  /*border-radius: 4px 0 0 4px;
+  padding-left: 30px;
+  border-radius: 5px 0 0 5px;
   margin-left: 30px;
   
 }
@@ -210,7 +231,6 @@ padding-top: 15px;
 .breadcrumb li:nth-child(4) a:after { border-left-color: hsla(0,0%,75%,1); }
 .breadcrumb li:last-child a {
   color: white;
-  cursor: default;
   background:   hsla(0,0%,75%,1);
 }
 .breadcrumb li:last-child a::after { 
@@ -225,12 +245,13 @@ padding-top: 15px;
 .breadcrumb li a:hover:after { 
   color:black;
   border-left: 15px solid white;
-}*/*/
+}
 
 /*  Breadcrumb END
 
 -----------------------------------------------------------------------------*/
-=======
+
+
 /* Teasers section
 -----------------------------------------------------------------------------*/
 
