@@ -24,6 +24,7 @@ body {
     height: 100%;
     font-family: 'Arial Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', Tahoma, sans-serif;
     font-size: 18px;
+    background-image: url(../images/bg-body.png);
 }
 
 .wrapper {
@@ -192,6 +193,20 @@ a.linkedin {
     color: #1a1e21;
 }
 
+@media(max-width:768px) {
+    .menu-item a {
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width:420px) {
+    .menu-list li {
+        font-size: 16px;
+    }
+    .menu-item {
+        margin: 10px 5px;
+    }
+}
 
 /* Main menu END
 -----------------------------------------------------------------------------*/
@@ -299,7 +314,6 @@ a.linkedin {
 -----------------------------------------------------------------------------*/
 
 .teasers {
-    background-color: #eeeeee;
     display: block;
     padding: 60px 0 30px 0;
 }
@@ -309,12 +323,14 @@ a.linkedin {
 }
 
 .column-teaser li:first-child {
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
 .block-teaser h2 {
+    font-size: 34px;
     color: #915542;
     margin-bottom: 20px;
+    line-height: 1.059;
 }
 
 .block-teaser p {
@@ -349,27 +365,11 @@ a.linkedin {
 .inline-block {
     display: inline-block;
     vertical-align: top;
-    width: 450px;
+    width: 455px;
     margin-bottom: 90px;
 }
 
-
-/* Teasers section End
------------------------------------------------------------------------------*/
-
-
-/* Media
------------------------------------------------------------------------------*/
-
 @media(max-width:768px) {
-    /* Main menu*/
-    .menu-item a {
-        padding: 10px 10px;
-    }
-    .menu-item {
-        margin: 10px 5px;
-    }
-    /*Teaser section*/
     .block-teaser h2 {
         font-size: 24px;
     }
@@ -380,7 +380,7 @@ a.linkedin {
         margin: 0 35px;
     }
     .inline-block {
-        width: 45%;
+        width: 320px;
     }
     .image-teaser {
         width: 100px;
@@ -389,17 +389,9 @@ a.linkedin {
     .block-teaser {
         padding-left: 120px;
     }
-    .column-teaser li:first-child {
-        margin-right: 50px;
-    }
 }
 
 @media(max-width:420px) {
-    /* Main menu*/
-    .menu-list li {
-        font-size: 16px;
-    }
-    /*Teaser section*/
     .column-teaser {
         margin: 0 20px;
     }
@@ -416,15 +408,17 @@ a.linkedin {
 }
 
 @media(max-width:320px) {
-    /*Teaser section*/
     .block-teaser h2 {
-        font-size: 21px;
+        font-size: 22px;
     }
     .image-teaser {
         width: 90px;
         height: 90px;
     }
     .block-teaser {
-        padding-left: 120px;
+        padding-left: 100px;
     }
 }
+
+/* Teasers section End
+-----------------------------------------------------------------------------*/
