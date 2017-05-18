@@ -34,21 +34,23 @@ body {
 }
 
 @font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.otf')format(opentype);
+}
+
+@font-face {
     font-family: 'Myriad Pro Bold';
     src: url('../fonts/MyriadPro-Bold.otf')format(opentype);
 }
 
-
 /*Typography
 -----------------------------------*/
-h1
 h2,
 h3,
 h4 {
     font-family: 'Arial Regular', 'Arial', sans-serif;
     font-weight: normal;
     font-style: normal;
-    line-height: normal;
 }
 h1 {
     font-size: 16px;
@@ -60,11 +62,13 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;  
+    font-size: 22px;
+    line-height: auto;  
 }
 
 h4{
-    font-size: 24px;  
+    font-size: 24px;
+    line-height: auto;  
 }
 
 a {
@@ -194,6 +198,49 @@ a.linkedin {
 
 
 /* Main menu END
+-----------------------------------------------------------------------------*/
+
+/* Image Slider END
+-----------------------------------------------------------------------------*/
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        padding-top: 39px;
+        padding-bottom: 135px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        width: 600px;
+        height: 450px;
+    }
+    .swiper-pagination{
+        background: #6f6a67;
+    }
+
+    .swiper-button-prev .swiper-button-next {
+        background: #6f6a67;
+    }
+
+/* Image Slider END
 -----------------------------------------------------------------------------*/
 
 
