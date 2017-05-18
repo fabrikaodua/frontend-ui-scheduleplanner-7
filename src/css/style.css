@@ -22,10 +22,10 @@ summary {
 
 body {
     height: 100%;
-	font-family: 'Arial Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', Tahoma, sans-serif;
+    font-family: 'Arial Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', Tahoma, sans-serif;
     font-size: 18px;
 }
-  
+
 .wrapper {
     min-width: 320px;
     max-width: 100%;
@@ -33,29 +33,52 @@ body {
     height: auto !important;
 }
 
-@font-face{
-	font-family: 'Myriad Pro Bold';
-	src:url('../fonts/MyriadPro-Bold.otf')format(opentype);
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('../fonts/MyriadPro-Bold.otf')format(opentype);
 }
+
+
 /*Typography
 -----------------------------------*/
+h1
+h2,
+h3,
+h4 {
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+}
 h1 {
-	font-size: 14px;
-	font-weight: normal;
-	font-style: normal;
-	line-height: normal;
-	text-transform: uppercase;
-	font-family: 'Myriad Pro Bold' sans-serif;
+    font-size: 16px;
+    font-family: 'Myriad Pro Bold' sans-serif;
 }
-h2, h3, h4 {
-	font-family:'Arial Regular', 'Arial', sans-serif;
+h2 {
+    font-size: 34px;
+    line-height: 1.059;
 }
+
+h3 {
+    font-size: 22px;  
+}
+
+h4{
+    font-size: 24px;  
+}
+
 a {
-	text-decoration: none;
-	cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
 }
 
 /* Header*/
@@ -63,6 +86,7 @@ a:hover {
 .header {
     height: auto;
 }
+
 
 /* Middle*/
 
@@ -75,6 +99,7 @@ a:hover {
     max-width: 960px;
     margin: 0 auto;
 }
+
 
 /* Footer*/
 
@@ -171,88 +196,102 @@ a.linkedin {
 /* Main menu END
 -----------------------------------------------------------------------------*/
 
+
 /* Breadcrumb
 /*-----------------------------------------------------------------------------*/
-.breadcrumb { 
-  list-style: none; 
-  overflow: hidden; 
-  font-size: 14px;
+
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    font-size: 14px;
 }
-.breadcrumb li { 
-float: left;
-padding-top: 15px;
+
+.breadcrumb li {
+    float: left;
+    padding-top: 15px;
 }
 
 .breadcrumb li a {
-  color: white;
-  text-decoration: none; 
-  padding: 10px 10px 10px 30px;
-  background: hsla(0,0%,53%,1); 
-  position: relative; 
-  display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px 10px 30px;
+    background: hsla(0, 0%, 53%, 1);
+    position: relative;
+    display: block;
 }
-.breadcrumb li a::after { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 17px solid transparent; 
-  border-bottom: 17px solid transparent;
-  border-left: 15px solid hsla(0,0%,53%,1);
-  position: absolute;
-  top: 50%;
-  margin-top: -17px; 
-  left: 100%;
-  z-index: 1; 
+
+.breadcrumb li a::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 15px solid hsla(0, 0%, 53%, 1);
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: 100%;
+    z-index: 1;
 }
-.breadcrumb li a::before { 
-  content: " "; 
-  display: block; 
-  width: 0; 
-  height: 0;
-  border-top: 17px solid transparent;       
-  border-bottom: 17px solid transparent;
-  border-left: 15px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -17px; 
-  margin-left: 1px;
-  left: 100%;
-  z-index: 1; 
+
+.breadcrumb li a::before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 15px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
 }
+
 .breadcrumb li:first-child a {
-  padding-left: 20px;
-  border-radius: 5px 0 0 5px;
-  margin-left: 30px;
-  
+    padding-left: 20px;
+    border-radius: 5px 0 0 5px;
+    margin-left: 30px;
 }
-.breadcrumb li:nth-child(2) a       { background:        hsla(0,0%,60%,1); }
-.breadcrumb li:nth-child(2) a:after { border-left-color: hsla(0,0%,60%,1); }
-.breadcrumb li:nth-child(3) a       { background:        hsla(0,0%,67%,1); }
-.breadcrumb li:nth-child(3) a:after { border-left-color: hsla(0,0%,67%,1); }
-.breadcrumb li:nth-child(4) a       { background:        hsla(0,0%,75%,1); }
-.breadcrumb li:nth-child(4) a:after { border-left-color: hsla(0,0%,75%,1); }
+
+.breadcrumb li:nth-child(2) a {
+    background: hsla(0, 0%, 60%, 1);
+}
+
+.breadcrumb li:nth-child(2) a:after {
+    border-left-color: hsla(0, 0%, 60%, 1);
+}
+
+.breadcrumb li:nth-child(3) a {
+    background: hsla(0, 0%, 67%, 1);
+}
+
+.breadcrumb li:nth-child(3) a:after {
+    border-left-color: hsla(0, 0%, 67%, 1);
+}
+
+.breadcrumb li:nth-child(4) a {
+    background: hsla(0, 0%, 75%, 1);
+}
+
+.breadcrumb li:nth-child(4) a:after {
+    border-left-color: hsla(0, 0%, 75%, 1);
+}
+
 .breadcrumb li:last-child a {
-  color: white;
-  background:   hsla(0,0%,75%,1);
-  padding-right: 15px;
+    color: white;
+    background: hsla(0, 0%, 75%, 1);
+    padding-right: 15px;
 }
-.breadcrumb li:last-child a::after { 
-  border-left-color: hsla(0,0%,75%,1);
+
+.breadcrumb li:last-child a::after {
+    border-left-color: hsla(0, 0%, 75%, 1);
 }
-/*.breadcrumb li a:hover { 
-  background: hsla(0, 0%, 100%, 0); 
-  color: black;
-  border-left:solid white;
-  
-}
-.breadcrumb li a:hover:after { 
-  color:black;
-  border-left: 15px solid white;
-}*/
 
 /*  Breadcrumb END
-
 -----------------------------------------------------------------------------*/
 
 
@@ -274,10 +313,8 @@ padding-top: 15px;
 }
 
 .block-teaser h2 {
-    font-size: 34px;
     color: #915542;
     margin-bottom: 20px;
-    line-height: 1.059;
 }
 
 .block-teaser p {
@@ -319,7 +356,6 @@ padding-top: 15px;
 
 /* Teasers section End
 -----------------------------------------------------------------------------*/
-
 
 
 /* Media
