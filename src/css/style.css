@@ -227,7 +227,7 @@ a.linkedin {
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        background: url(../images/bg-body.png);
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -252,7 +252,7 @@ a.linkedin {
     }
 
     .swiper-button-prev .swiper-button-next {
-        background: #6f6a67;
+        background-color: #6f6a67;
     }
 
 /* Image Slider END
