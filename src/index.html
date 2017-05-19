@@ -12,6 +12,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="path/to/swiper.min.css">
+	<link rel="stylesheet" href="../dist/css/swiper.min.css">
 	<script src="picturefill.js"></script>
 </head>
 
@@ -51,73 +55,82 @@
 				<div class="container">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam molestias quos magnam nesciunt quae, porro animi accusamus
 					sunt placeat voluptas minus adipisci reiciendis ex incidunt praesentium officiis vitae repudiandae modi?
+					<!-- Image Slider-->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/slider.png" alt="slider1"></div>
+							<div class="swiper-slide"><img src="images/slider.png" alt="slider2"></div>
+							<div class="swiper-slide"><img src="images/slider.png" alt="slider3"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<!-- Image Slider End-->
 
-			<!-- Teasers section-->
+					<!-- Teasers section-->
 
-			<section class="teasers">
-				<div class="container">
-						<ul class="column-teaser">
-							<li class="inline-block">
-								<div class="block-teaser">
-									<div class="image-teaser"><img src="images/teasers-calendar.png" alt="calendar"></div>
-									<h2>Google Calendar & iCal integration</h2>
-									<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-										quis bibendum auctor, nisi elit consequat ipsum</p>
-								</div>
-							</li>
-							<li class="inline-block">
-								<div class="block-teaser">
-									<div class="image-teaser"><img src="images/teasers-dropbox.png" alt="dropbox"></div>
-									<h2>Dropbox backup</h2>
-									<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-										quis bibendum auctor, nisi elit consequat ipsum</p>
-								</div>
-							</li>
-						</ul>
-						<ul class="column-teaser">
-							<li class="inline-block">
-								<div class="block-teaser">
-									<div class="image-teaser"><img src="images/teasers-repeat.png" alt="repeat"></div>
-									<h2>Charts</h2>
-									<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-										quis bibendum auctor, nisi elit consequat ipsum</p>
-								</div>
-							</li>
-							<li class="inline-block">
-								<div class="block-teaser">
-									<div class="image-teaser"><img src="images/teasers-planned_actual.png" alt="planned_actual"></div>
-									<h2>Planned vs Actual</h2>
-									<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-										quis bibendum auctor, nisi elit consequat ipsum</p>
-								</div>
-							</li>
-						</ul>
+					<section class="teasers">
+						<div class="container">
+							<ul class="column-teaser">
+								<li class="inline-block">
+									<div class="block-teaser">
+										<div class="image-teaser"><img src="images/teasers-calendar.png" alt="calendar"></div>
+										<h2>Google Calendar & iCal integration</h2>
+										<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											quis bibendum auctor, nisi elit consequat ipsum</p>
+									</div>
+								</li>
+								<li class="inline-block">
+									<div class="block-teaser">
+										<div class="image-teaser"><img src="images/teasers-dropbox.png" alt="dropbox"></div>
+										<h2>Dropbox backup</h2>
+										<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											quis bibendum auctor, nisi elit consequat ipsum</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="column-teaser">
+								<li class="inline-block">
+									<div class="block-teaser">
+										<div class="image-teaser"><img src="images/teasers-repeat.png" alt="repeat"></div>
+										<h2>Charts</h2>
+										<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											quis bibendum auctor, nisi elit consequat ipsum</p>
+									</div>
+								</li>
+								<li class="inline-block">
+									<div class="block-teaser">
+										<div class="image-teaser"><img src="images/teasers-planned_actual.png" alt="planned_actual"></div>
+										<h2>Planned vs Actual</h2>
+										<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+											quis bibendum auctor, nisi elit consequat ipsum</p>
+									</div>
+								</li>
+							</ul>
 
-				</div>
-			</section>
-			<!-- Teasers section END-->
-
-
-
+						</div>
+					</section>
+					<!-- Teasers section END-->
 
 		</main>
 		<!-- .content -->
-	</div>
-	<!-- .wrapper -->
-	<footer class="footer">
-		<div class="container">
-			<div class="connect">
-				<h3>Connect</h3>
-				<a href="http://plus.google.com/" class="google-plus" target="_blank" >1</a>
-				<a href="http://twitter.com/" class="twitter" target="_blank">2</a>
-				<a href="http://facebook.com/" class="facebook" target="_blank">3</a>
-				<a href="https://www.linkedin.com/" class="linkedin" target="_blank">4</a>
-				<p>Subscribe to receive INTERSOG updates</p>
-				<form id="application" action=" application.php" method="POST" name=" application ">
-					<input class="applicationEmail" name="email" type="email" maxlength="20">
-					<button class="applicationButton" type="submit" form="application">Subscribe</button>
-				</form>
-			</div>
+		</div>
+		<!-- .wrapper -->
+		<footer class="footer">
+			<div class="container">
+				<div class="connect">
+					<h3>Connect</h3>
+					<a href="http://plus.google.com/" class="google-plus" target="_blank">1</a>
+					<a href="http://twitter.com/" class="twitter" target="_blank">2</a>
+					<a href="http://facebook.com/" class="facebook" target="_blank">3</a>
+					<a href="https://www.linkedin.com/" class="linkedin" target="_blank">4</a>
+					<p>Subscribe to receive INTERSOG updates</p>
+					<form id="application" action=" application.php" method="POST" name=" application ">
+						<input class="applicationEmail" name="email" type="email" maxlength="20">
+						<button class="applicationButton" type="submit" form="application">Subscribe</button>
+					</form>
+				</div>
 				<div class="partners">
 					<h3>Our partners</h3>
 					<img class="footer-logo" src="./images/footer-logo-comboapp.png" alt="logo-comboapp">
@@ -125,9 +138,16 @@
 					<span>&copy; INTERSOG 2005-2012</span>
 				</div>
 
-		</div>
-	</footer>
-	<!-- .footer -->
+			</div>
+		</footer>
+		<!-- .footer -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+		<script src="path/to/swiper.min.js"></script>
+		<script src="../dist/js/swiper.min.js"></script>
+		<script src="index.js"></script>
 </body>
 
 </html>
