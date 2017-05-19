@@ -166,6 +166,31 @@ a.linkedin {
 /* Main menu END
 -----------------------------------------------------------------------------*/
 
+
+/*  Site title
+-----------------------------------------------------------------------------*/
+.site-title img {
+    float: left;
+    margin-top: 36px;
+    margin-left: 84px;
+}
+
+.site-title h1 {
+    position: relative;
+    top: -30px;
+    margin-left: 226px;
+    margin-right: -120px;
+}
+
+.site-title h1::after {
+    content: url(../images/site-title-badge.png);
+    position: relative;
+    left: -20px;
+}
+/*  Site title END
+-----------------------------------------------------------------------------*/
+
+
 /* Breadcrumb
 /*-----------------------------------------------------------------------------*/
 breadcrumb { 
@@ -328,6 +353,19 @@ padding-top: 15px;
     .menu-item {
         margin: 10px 5px;
     }
+    /*Site title*/
+    .site-title img {
+        margin-top: 34px;
+        margin-left: 18px;
+    }
+    .site-title h1 {
+        top: 38px;
+        margin-left: 140px;
+    }
+    .site-title h1::after {
+        display: none;
+    }
+
     /*Teaser section*/
     .block-teaser h2 {
         font-size: 24px;
@@ -358,6 +396,18 @@ padding-top: 15px;
     .menu-list li {
         font-size: 16px;
     }
+    /*Site title*/
+    .site-title img {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .site-title h1 {
+        top: 32px;
+        margin-left: 84px;
+    }
+    .site-title h1::after {
+        display: none;
+    }
     /*Teaser section*/
     .column-teaser {
         margin: 0 20px;
@@ -375,6 +425,18 @@ padding-top: 15px;
 }
 
 @media(max-width:320px) {
+    /*Site title*/
+    .site-title img {
+        margin-top: 14px;
+        margin-left: 0;
+    }
+    .site-title h1 {
+        top: 24px;
+        margin-left: 58px;
+    }
+    .site-title h1::after {
+        display: none;
+    }    
     /*Teaser section*/
     .block-teaser h2 {
         font-size: 21px;
