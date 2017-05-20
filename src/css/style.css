@@ -99,7 +99,7 @@ p {
     padding: 0 0 190px;
 }
 
-.container {
+.content-wrapper {
     min-width: 320px;
     max-width: 960px;
     margin: 0 auto;
