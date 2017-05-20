@@ -215,6 +215,9 @@ a.linkedin {
 /* Main menu END
 -----------------------------------------------------------------------------*/
 
+.body-top {
+    background-image: url(../images/bg-body-top.jpg);
+}
 
 /*  Site title
 -----------------------------------------------------------------------------*/
@@ -229,6 +232,11 @@ a.linkedin {
     top: -30px;
     margin-left: 226px;
     margin-right: -120px;
+    font-size: 77px;
+    background: linear-gradient(to top, #000, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
 }
 
 .site-title h1::after {
