@@ -105,7 +105,6 @@ p {
     margin: 0 auto;
 }
 
-
 /* Footer*/
 
 .footer {
@@ -166,24 +165,18 @@ a.linkedin {
     text-align: center;
 }
 
-.main-menu ul {
-    font-size: 0;
-    line-height: 0;
-    letter-spacing: -1px;
-}
-
 .menu-list li {
     display: inline-block;
-    font-size: 22px;
     line-height: normal;
     letter-spacing: normal;
 }
 
 .menu-item a {
+    font-size: 16px;
     text-decoration: none;
     color: #cdcdcd;
     display: block;
-    padding: 10px 30px;
+    padding: 6px 20px;
 }
 
 .menu-item {
@@ -204,9 +197,6 @@ a.linkedin {
 }
 
 @media(max-width:420px) {
-    .menu-list li {
-        font-size: 16px;
-    }
     .menu-item {
         margin: 10px 5px;
     }
