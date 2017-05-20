@@ -165,13 +165,13 @@ a.linkedin {
     text-align: center;
 }
 
-.menu-list li {
+.main-menu .menu-list li {
     display: inline-block;
     line-height: normal;
     letter-spacing: normal;
 }
 
-.menu-item a {
+.menu-list .menu-item a {
     font-size: 16px;
     text-decoration: none;
     color: #cdcdcd;
@@ -179,25 +179,25 @@ a.linkedin {
     padding: 6px 20px;
 }
 
-.menu-item {
+.menu-list .menu-item {
     margin: 10px 10px;
 }
 
-.active a,
-.menu-item a:hover {
+.menu-list .active a,
+.menu-list .menu-item a:hover {
     background-color: #979899;
     border-radius: 30px;
     color: #1a1e21;
 }
 
 @media(max-width:768px) {
-    .menu-item a {
+    .menu-list .menu-item a {
         padding: 10px 10px;
     }
 }
 
 @media(max-width:420px) {
-    .menu-item {
+    .menu-list .menu-item {
         margin: 10px 5px;
     }
 }
