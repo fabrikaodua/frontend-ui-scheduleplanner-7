@@ -219,20 +219,18 @@ a.linkedin {
 
 .site-title h1 {
     position: relative;
-    top: -30px;
+    top: 40px;
+    white-space: nowrap;
     margin-left: 226px;
-    margin-right: -120px;
-    font-size: 77px;
-    background: linear-gradient(to top, #000, #fff);
+    background: linear-gradient(to top, #983904 50%, transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #000;
 }
 
 .site-title h1::after {
     content: url(../images/site-title-badge.png);
-    position: relative;
-    left: -20px;
+    position: absolute;
+    bottom: 20px;
 }
 /*  Site title END
 -----------------------------------------------------------------------------*/
