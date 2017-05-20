@@ -390,11 +390,11 @@ a.linkedin {
     padding: 60px 0 30px 0;
 }
 
-.column-teaser {
+.inline-teaser {
     font-size: 0;
 }
 
-.column-teaser li:first-child {
+.inline-teaser article:first-child {
     margin-right: 50px;
 }
 
