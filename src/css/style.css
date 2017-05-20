@@ -232,6 +232,48 @@ a.linkedin {
     position: absolute;
     bottom: 20px;
 }
+
+@media(max-width:768px) {
+    .site-title img {
+        margin-top: 34px;
+        margin-left: 18px;
+    }
+    .site-title h1 {
+        top: 38px;
+        margin-left: 140px;
+    }
+    .site-title h1::after {
+        display: none;
+    }
+}
+
+@media(max-width:420px) {
+    .site-title img {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .site-title h1 {
+        top: 32px;
+        margin-left: 84px;
+    }
+    .site-title h1::after {
+        display: none;
+    }
+}
+
+@media(max-width:320px) {
+    .site-title img {
+        margin-top: 14px;
+        margin-left: 0;
+    }
+    .site-title h1 {
+        top: 24px;
+        margin-left: 58px;
+    }
+    .site-title h1::after {
+        display: none;
+    }    
+}
 /*  Site title END
 -----------------------------------------------------------------------------*/
 
@@ -433,19 +475,6 @@ a.linkedin {
 @media(max-width:768px) {
 
 
-    /*Site title*/
-    .site-title img {
-        margin-top: 34px;
-        margin-left: 18px;
-    }
-    .site-title h1 {
-        top: 38px;
-        margin-left: 140px;
-    }
-    .site-title h1::after {
-        display: none;
-    }
-
     /*Teaser section*/
     .block-teaser h2 {
         font-size: 24px;
@@ -471,18 +500,6 @@ a.linkedin {
 @media(max-width:420px) {
 
 
-    /*Site title*/
-    .site-title img {
-        margin-top: 30px;
-        margin-left: 0;
-    }
-    .site-title h1 {
-        top: 32px;
-        margin-left: 84px;
-    }
-    .site-title h1::after {
-        display: none;
-    }
     /*Teaser section*/
     .column-teaser {
         margin: 0 20px;
@@ -501,18 +518,7 @@ a.linkedin {
 
 @media(max-width:320px) {
 
-    /*Site title*/
-    .site-title img {
-        margin-top: 14px;
-        margin-left: 0;
-    }
-    .site-title h1 {
-        top: 24px;
-        margin-left: 58px;
-    }
-    .site-title h1::after {
-        display: none;
-    }    
+    
     /*Teaser section*/
     .block-teaser h2 {
         font-size: 22px;
