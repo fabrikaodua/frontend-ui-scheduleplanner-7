@@ -1,8 +1,8 @@
 'use strict';
  let swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
+     pagination: '.swiper-pagination',
         paginationClickable: true,
-        nextButton: '.swiper-button-next',
+       nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 30
     });

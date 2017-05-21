@@ -20,9 +20,22 @@ summary {
     display: block;
 }
 
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.otf') format(opentype);
+    font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('../fonts/MyriadPro-Bold.otf')format(opentype);
+    font-style: normal;
+	font-weight: normal;
+}
 body {
     height: 100%;
-    font-family: 'Arial Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', Tahoma, sans-serif;
+    font-family: 'Arial Regular', 'MyriadPro-Bold','MyriadPro-Regular', 'Arial', 'Verdana', 'Tahoma', sans-serif;
     font-size: 18px;
     background-image: url(../images/bg-body.png);
 }
@@ -32,16 +45,6 @@ body {
     max-width: 100%;
     min-height: 100%;
     height: auto !important;
-}
-
-@font-face {
-    font-family: 'MyriadPro-Regular';
-    src: url('../fonts/MyriadPro-Regular.otf')format(opentype);
-}
-
-@font-face {
-    font-family: 'Myriad Pro Bold';
-    src: url('../fonts/MyriadPro-Bold.otf')format(opentype);
 }
 
 /*Typography
@@ -54,8 +57,11 @@ h4 {
     font-style: normal;
 }
 h1 {
-    font-size: 16px;
-    font-family: 'Myriad Pro Bold' sans-serif;
+    font-size: 76.36px;
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0em;
 }
 h2 {
     font-size: 34px;
@@ -67,9 +73,10 @@ h3 {
     line-height: auto;  
 }
 
-h4{
+h4 {
     font-size: 24px;
-    line-height: auto;  
+    line-height: 36px;
+    letter-spacing: 0em;  
 }
 
 a {
@@ -82,8 +89,17 @@ a:hover {
 }
 
 p {
+    font-size: 18px;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+}
+.article p {
     font-size: 16px;
     font-family: 'Arial Regular', 'Arial', sans-serif;
+    line-height: auto;
+    letter-spacing: 0em; 
 }
 
 /* Header*/
@@ -100,9 +116,21 @@ p {
 }
 
 .content-wrapper {
-    min-width: 320px;
+    min-width: 280px;
     max-width: 960px;
     margin: 0 auto;
+}
+
+@media(max-width:768px) {
+    .content-wrapper {
+        margin: 0 35px;
+    }
+}
+
+@media(max-width:420px) {
+    .content-wrapper {
+        margin: 0 20px;
+    }
 }
 
 /* Footer*/
@@ -192,14 +220,17 @@ a.linkedin {
 
 @media(max-width:768px) {
     .menu-list .menu-item a {
-        padding: 10px 10px;
+        padding: 6px 10px;
     }
 }
 
 @media(max-width:420px) {
     .menu-list .menu-item {
-        margin: 10px 5px;
+        margin: 10px 0;
     }
+    .menu-list .menu-item a {       
+        font-size: 14px; 
+    }    
 }
 
 /* Main menu END
@@ -220,9 +251,9 @@ a.linkedin {
 .site-title h1 {
     position: relative;
     top: 40px;
-    white-space: nowrap;
     margin-left: 226px;
     background: linear-gradient(to top, #983904 50%, transparent);
+    white-space: nowrap;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -290,7 +321,7 @@ a.linkedin {
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: url(../images/bg-body.png);
+        background: url(../images/bg-body-top.jpg);
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -310,14 +341,20 @@ a.linkedin {
         width: 600px;
         height: 450px;
     }
-    .swiper-pagination{
-        background: #6f6a67;
-    }
 
-    .swiper-button-prev .swiper-button-next {
-        background-color: #6f6a67;
+@media(max-width:768px) {
+    .swiper-slide img {
+        width: 450px;
+        height: 330px;
     }
+}
 
+@media(max-width:420px) {
+    .swiper-slide img {
+        width: 330px;
+        height: 240px;
+    }
+}    
 /* Image Slider END
 -----------------------------------------------------------------------------*/
 
@@ -382,40 +419,44 @@ a.linkedin {
     margin-left: 30px;
 }
 
-.breadcrumb li:nth-child(2) a {
-    background: hsla(0, 0%, 60%, 1);
+.breadcrumb li:nth-child(n+2) a {
+    background: hsla(0, 0%, 66%, 1);
 }
 
-.breadcrumb li:nth-child(2) a:after {
-    border-left-color: hsla(0, 0%, 60%, 1);
-}
-
-.breadcrumb li:nth-child(3) a {
-    background: hsla(0, 0%, 67%, 1);
-}
-
-.breadcrumb li:nth-child(3) a:after {
-    border-left-color: hsla(0, 0%, 67%, 1);
-}
-
-.breadcrumb li:nth-child(4) a {
-    background: hsla(0, 0%, 75%, 1);
-}
-
-.breadcrumb li:nth-child(4) a:after {
-    border-left-color: hsla(0, 0%, 75%, 1);
+.breadcrumb li:nth-child(n+2) a:after {
+    border-left-color: hsla(0, 0%, 66%, 1);
 }
 
 .breadcrumb li:last-child a {
     color: white;
-    background: hsla(0, 0%, 75%, 1);
+    background: hsla(0, 0%, 66%, 1);
     padding-right: 15px;
 }
 
 .breadcrumb li:last-child a::after {
-    border-left-color: hsla(0, 0%, 75%, 1);
+    border-left-color: hsla(0, 0%, 66%, 1);
 }
 
+@media(max-width:768px) {
+    .breadcrumb li a {
+        padding:10px 5px 10px 25px;
+    }
+}
+
+@media(max-width:420px) {
+    .breadcrumb li a{
+       padding:10px 0 10px 20px;
+    }
+    .breadcrumb{       
+        font-size: 13px; 
+    } 
+    .breadcrumb li:first-child a {
+        padding-left: 10px;
+    }
+    .breadcrumb li:last-child a {
+        padding-right: 5px;
+    }
+}
 /*  Breadcrumb END
 -----------------------------------------------------------------------------*/
 
@@ -425,7 +466,12 @@ a.linkedin {
 
 .teasers {
     display: block;
-    padding: 60px 0 30px 0;
+    padding: 60px 0 25px 0;
+    border-top: 5px solid #000;
+    border-image-source: url(../images/teasers-border.png);
+    border-image-slice: 5 3;
+    border-image-repeat: repeat;
+    border-image-outset: 0.5;
 }
 
 .inline-teaser {
@@ -473,20 +519,18 @@ a.linkedin {
 }
 
 @media(max-width:768px) {
-
-
-    /*Teaser section*/
+    .teasers {
+        padding: 60px 0 5px 0;
+    }
     .block-teaser h2 {
         font-size: 24px;
     }
     .block-teaser p {
         font-size: 14px;
     }
-    .column-teaser {
-        margin: 0 35px;
-    }
     .inline-block {
         width: 320px;
+        margin-bottom: 45px;
     }
     .image-teaser {
         width: 100px;
@@ -498,14 +542,12 @@ a.linkedin {
 }
 
 @media(max-width:420px) {
-
-
-    /*Teaser section*/
-    .column-teaser {
-        margin: 0 20px;
-    }
+    .teasers {
+        padding-top: 30px;
+    }    
     .inline-block {
         width: 100%;
+        margin-bottom: 30px;
     }
     .image-teaser {
         width: 120px;
@@ -517,9 +559,6 @@ a.linkedin {
 }
 
 @media(max-width:320px) {
-
-    
-    /*Teaser section*/
     .block-teaser h2 {
         font-size: 22px;
     }
