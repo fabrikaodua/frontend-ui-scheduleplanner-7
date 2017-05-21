@@ -20,9 +20,22 @@ summary {
     display: block;
 }
 
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.otf') format(opentype);
+    font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Bold';
+    src: url('../fonts/MyriadPro-Bold.otf')format(opentype);
+    font-style: normal;
+	font-weight: normal;
+}
 body {
     height: 100%;
-    font-family: 'Arial Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', Tahoma, sans-serif;
+    font-family: 'Arial Regular', 'MyriadPro-Bold','MyriadPro-Regular', 'Arial', 'Verdana', 'Tahoma', sans-serif;
     font-size: 18px;
     background-image: url(../images/bg-body.png);
 }
@@ -32,16 +45,6 @@ body {
     max-width: 100%;
     min-height: 100%;
     height: auto !important;
-}
-
-@font-face {
-    font-family: 'MyriadPro-Regular';
-    src: url('../fonts/MyriadPro-Regular.otf')format(opentype);
-}
-
-@font-face {
-    font-family: 'Myriad Pro Bold';
-    src: url('../fonts/MyriadPro-Bold.otf')format(opentype);
 }
 
 /*Typography
@@ -54,8 +57,11 @@ h4 {
     font-style: normal;
 }
 h1 {
-    font-size: 16px;
-    font-family: 'Myriad Pro Bold' sans-serif;
+    font-size: 76.36px;
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0em;
 }
 h2 {
     font-size: 34px;
@@ -67,9 +73,10 @@ h3 {
     line-height: auto;  
 }
 
-h4{
+h4 {
     font-size: 24px;
-    line-height: auto;  
+    line-height: 36px;
+    letter-spacing: 0em;  
 }
 
 a {
@@ -82,8 +89,17 @@ a:hover {
 }
 
 p {
+    font-size: 18px;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 28px;
+}
+.article p {
     font-size: 16px;
     font-family: 'Arial Regular', 'Arial', sans-serif;
+    line-height: auto;
+    letter-spacing: 0em; 
 }
 
 /* Header*/
@@ -235,9 +251,9 @@ a.linkedin {
 .site-title h1 {
     position: relative;
     top: 40px;
-    white-space: nowrap;
     margin-left: 226px;
     background: linear-gradient(to top, #983904 50%, transparent);
+    white-space: nowrap;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -305,7 +321,7 @@ a.linkedin {
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: url(../images/bg-body.png);
+        background: url(../images/bg-body-top.jpg);
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
