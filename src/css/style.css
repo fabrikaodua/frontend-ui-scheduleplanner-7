@@ -100,9 +100,21 @@ p {
 }
 
 .content-wrapper {
-    min-width: 320px;
+    min-width: 280px;
     max-width: 960px;
     margin: 0 auto;
+}
+
+@media(max-width:768px) {
+    .content-wrapper {
+        margin: 0 35px;
+    }
+}
+
+@media(max-width:420px) {
+    .content-wrapper {
+        margin: 0 20px;
+    }
 }
 
 /* Footer*/
