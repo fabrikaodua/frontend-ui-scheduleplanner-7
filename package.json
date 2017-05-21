@@ -2,7 +2,7 @@
 	"name": "frontend-ui-scheduleplanner",
 	"description": "Development of a responsive web page",
 	"author": "Constantine Genchevsky",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"dependencies": {
 
 	},
@@ -16,6 +16,7 @@
 	},
 	"scripts": {
 		"start": "grunt start",
-		"test": "grunt htmlcode & grunt htmlvalidate & grunt csscode"
+		"lint": "grunt htmlcode & grunt htmlvalidate & grunt csscode",
+		"test": "echo 'Without tests'"
 	}
 }
