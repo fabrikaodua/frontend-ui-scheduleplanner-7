@@ -1,5 +1,7 @@
 # Вёрстка адаптивного макета с использованиеим HTML+CSS. 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fabrikaodua/frontend-ui-scheduleplanner-7.svg?token=2a6c06b5dd842b1bb29aefb2847aff6ef078f9a5231a5f08f9aa94da40cd376a&ts=1495330669381)](https://greenkeeper.io/)
+
 Делать карусель не нужно. Любые задачи на JavaScript можно игнорировать. Минимальная поддерживаемая ширина экрана 320px, максимальная - 1920px. Рекомендуется приступать к вёрстке начиная с ширины 320.
 
 ### Полезные ссылки:
