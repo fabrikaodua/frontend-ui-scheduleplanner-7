@@ -341,14 +341,20 @@ a.linkedin {
         width: 600px;
         height: 450px;
     }
-    .swiper-pagination{
-        background: #6f6a67;
-    }
 
-    .swiper-button-prev .swiper-button-next {
-        background-color: #6f6a67;
+@media(max-width:768px) {
+    .swiper-slide img {
+        width: 450px;
+        height: 330px;
     }
+}
 
+@media(max-width:420px) {
+    .swiper-slide img {
+        width: 330px;
+        height: 240px;
+    }
+}    
 /* Image Slider END
 -----------------------------------------------------------------------------*/
 
@@ -449,6 +455,7 @@ a.linkedin {
     }
     .breadcrumb li:last-child a {
         padding-right: 5px;
+    }
 }
 /*  Breadcrumb END
 -----------------------------------------------------------------------------*/
