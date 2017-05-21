@@ -499,7 +499,7 @@ a.linkedin {
     .block-teaser p {
         font-size: 14px;
     }
-    .column-teaser {
+    .inline-teaser {
         margin: 0 35px;
     }
     .inline-block {
@@ -515,7 +515,7 @@ a.linkedin {
 }
 
 @media(max-width:420px) {
-    .column-teaser {
+    .inline-teaser {
         margin: 0 20px;
     }
     .inline-block {
