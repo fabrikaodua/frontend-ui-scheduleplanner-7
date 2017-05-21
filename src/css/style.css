@@ -534,3 +534,54 @@ a.linkedin {
 
 /* Teasers section End
 -----------------------------------------------------------------------------*/
+
+/* Features section
+-----------------------------------------------------------------------------*/
+
+.features {
+    background-image: url(../images/bg-features.png);
+}
+
+.features .features-list {
+    padding-top: 20px;
+}
+
+.features .features-item {
+    padding-bottom: 20px;
+}
+
+.features .image {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.features img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.features .name {
+    padding-top: 20px;
+    padding-left: 86px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+@media(min-width:768px) {
+    .features .features-list {
+        column-count: 2;
+    }
+    .features .features-list {
+    padding-top: 40px;
+    }
+    .features .features-item {
+    padding-bottom: 40px;
+    }
+}
+
+/* Features section End
+-----------------------------------------------------------------------------*/
