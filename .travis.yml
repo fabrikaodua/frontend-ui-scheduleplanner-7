@@ -7,3 +7,11 @@ install:
 script:
   - npm run lint
   - npm test
+ notifications:
+    slack: 
+      on_pull_requests: false
+      rooms:
+        - fabrikafrontend:TEpM4Cm1fubobfLUFPzgOdKt
+      on_success: change # default: always
+      on_failure: change # default: always
+    
