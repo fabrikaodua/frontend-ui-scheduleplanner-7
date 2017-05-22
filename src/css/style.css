@@ -248,7 +248,7 @@ a.linkedin {
     margin-left: 84px;
 }
 
-.site-title h1 {
+.site-title .site-title-heading {
     position: relative;
     top: 40px;
     margin-left: 226px;
@@ -258,7 +258,7 @@ a.linkedin {
     -webkit-text-fill-color: transparent;
 }
 
-.site-title h1::after {
+.site-title .site-title-heading::after {
     content: url(../images/site-title-badge.png);
     position: absolute;
     bottom: 20px;
@@ -269,11 +269,11 @@ a.linkedin {
         margin-top: 34px;
         margin-left: 18px;
     }
-    .site-title h1 {
+    .site-title .site-title-heading {
         top: 38px;
         margin-left: 140px;
     }
-    .site-title h1::after {
+    .site-title .site-title-heading::after {
         display: none;
     }
 }
@@ -283,11 +283,11 @@ a.linkedin {
         margin-top: 30px;
         margin-left: 0;
     }
-    .site-title h1 {
+    .site-title .site-title-heading {
         top: 32px;
         margin-left: 84px;
     }
-    .site-title h1::after {
+    .site-title .site-title-heading::after {
         display: none;
     }
 }
@@ -297,11 +297,11 @@ a.linkedin {
         margin-top: 14px;
         margin-left: 0;
     }
-    .site-title h1 {
+    .site-title .site-title-heading {
         top: 24px;
         margin-left: 58px;
     }
-    .site-title h1::after {
+    .site-title .site-title-heading::after {
         display: none;
     }    
 }
