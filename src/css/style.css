@@ -582,29 +582,36 @@ a.linkedin {
 }
 
 .features .features-list {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .features .features-item {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
-.features .image {
+.features .features-item::before {
     position: absolute;
     width: 60px;
     height: 60px;
     float: left;
+    text-align: center;
 }
 
-.features img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.features .features-item:nth-child(n+1)::before {
+    content: url(../images/features-1.png);
+}
+.features .features-item:nth-child(n+2)::before {
+    content: url(../images/features-2.png);
+}
+.features .features-item:nth-child(n+3)::before {
+    content: url(../images/features-3.png);
+}
+.features .features-item:nth-child(n+4)::before {
+    content: url(../images/features-4.png);
 }
 
 .features .name {
-    padding-top: 20px;
+    padding-top: 12px;
     padding-left: 86px;
     font-size: 20px;
     color: #ffffff;
@@ -613,12 +620,6 @@ a.linkedin {
 @media(min-width:768px) {
     .features .features-list {
         column-count: 2;
-    }
-    .features .features-list {
-    padding-top: 40px;
-    }
-    .features .features-item {
-    padding-bottom: 40px;
     }
 }
 
