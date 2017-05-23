@@ -109,13 +109,13 @@ p {
     letter-spacing: 0em;
     color:#575757;
 }
-.blockquote {
+blockquote {
     font-size: 16px;
     font-family: 'Arial Italic', 'Arial', sans-serif;
     font-weight: normal;
     font-style: italic;
     line-height: 24px;
-    letter-spacing: 0em; 
+    letter-spacing: 0em;
 }
 /* Header*/
 
@@ -646,4 +646,55 @@ a.linkedin {
 }
 
 /* Features section End
+-----------------------------------------------------------------------------*/
+
+
+/* Quotes section
+-----------------------------------------------------------------------------*/
+.quotes {
+    background: rgb(248,247,243);
+}
+
+.quotes .quote{
+    padding-top: 20px;
+}
+
+.quotes .by-line {
+    text-align: right;
+    padding-top: 10px;
+}
+
+.quotes .quotes-button {
+    background: #a2a2a2;
+    background: -moz-linear-gradient(bottom, rgb(120,120,120), rgb(170,170,170));
+    background: -webkit-linear-gradient(bottom, rgb(120,120,120), rgb(170,170,170));
+    background: -o-linear-gradient(bottom, rgb(120,120,120), rgb(170,170,170));
+    background: -ms-linear-gradient(bottom, rgb(120,120,120), rgb(170,170,170));
+    background: linear-gradient(to top, rgb(120,120,120), rgb(170,170,170));
+    display: block;
+    position: relative;
+    bottom: -20px;
+    width: 188px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    color: #fff;
+}
+
+@media(min-width:992px) {
+    .quotes {
+    padding-right: 20px;
+    }
+
+    .quotes .quote {
+        display: inline-block;
+        width: 290px;
+        padding-left: 20px;
+    }
+}
+/* Quotes section End
 -----------------------------------------------------------------------------*/
