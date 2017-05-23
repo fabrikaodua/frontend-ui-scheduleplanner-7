@@ -35,7 +35,7 @@ summary {
 }
 body {
     height: 100%;
-    font-family: 'Arial Regular', 'MyriadPro-Bold','MyriadPro-Regular', 'Arial', 'Verdana', 'Tahoma', sans-serif;
+    font-family: 'Arial Regular', 'MyriadPro-Bold','MyriadPro-Regular','Arial Italic', 'Arial', 'Verdana', 'Tahoma', sans-serif;
     font-size: 18px;
     background-image: url(../images/bg-body.png);
 }
@@ -51,7 +51,8 @@ body {
 -----------------------------------*/
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: 'Arial Regular', 'Arial', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -78,6 +79,12 @@ h4 {
     line-height: 36px;
     letter-spacing: 0em;  
 }
+h5 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0em;  
+    color:#8f4f35;
+}
 
 a {
     text-decoration: none;
@@ -99,9 +106,17 @@ p {
     font-size: 16px;
     font-family: 'Arial Regular', 'Arial', sans-serif;
     line-height: auto;
+    letter-spacing: 0em;
+    color:#575757;
+}
+.blockquote {
+    font-size: 16px;
+    font-family: 'Arial Italic', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 24px;
     letter-spacing: 0em; 
 }
-
 /* Header*/
 
 .header {
