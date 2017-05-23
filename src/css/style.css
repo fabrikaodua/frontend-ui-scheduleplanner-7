@@ -253,6 +253,7 @@ a.linkedin {
 
 .body-top {
     background-image: url(../images/bg-body-top.jpg);
+    padding-bottom: 45px;
 }
 
 /*  Site title
@@ -330,9 +331,8 @@ a.linkedin {
         width: 100%;
         height: 100%;
         padding-top: 39px;
-        padding-bottom: 135px;
-    }
-
+        padding-bottom: 60px;
+}
     .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -350,13 +350,21 @@ a.linkedin {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+         
     }
 
     .swiper-slide img {
         width: 600px;
         height: 450px;
     }
-
+   
+    .swiper-pagination .swiper-pagination-bullet{
+        opacity: 0.5;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #d65600;
+        opacity:1;
+    }
 @media(max-width:768px) {
     .swiper-slide img {
         width: 450px;
