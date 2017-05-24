@@ -44,7 +44,7 @@ body {
     min-width: 320px;
     max-width: 100%;
     min-height: 100%;
-    height: auto !important;
+    height: auto;
 }
 
 /*Typography
@@ -62,7 +62,7 @@ h1 {
     font-family: 'MyriadPro-Bold', sans-serif;
     font-weight: bold;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: 0;
 }
 h2 {
     font-size: 34px;
@@ -77,12 +77,12 @@ h3 {
 h4 {
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: 0em;  
+    letter-spacing: 0;  
 }
 h5 {
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0em;  
+    letter-spacing: 0;  
     color:#8f4f35;
 }
 
@@ -106,7 +106,7 @@ p {
     font-size: 16px;
     font-family: 'Arial Regular', 'Arial', sans-serif;
     line-height: auto;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     color:#575757;
 }
 blockquote {
@@ -115,7 +115,7 @@ blockquote {
     font-weight: normal;
     font-style: italic;
     line-height: 24px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
 }
 /* Header*/
 
@@ -504,7 +504,7 @@ a.linkedin {
     margin-right: 50px;
 }
 
-.block-teaser h2 {
+.heading-teaser {
     color: #915542;
     margin-bottom: 20px;
 }
@@ -512,7 +512,6 @@ a.linkedin {
 .block-teaser {
     position: relative;
     padding-left: 180px;
-    min-height: 140px;
 }
 
 .image-teaser {
@@ -538,6 +537,7 @@ a.linkedin {
     vertical-align: top;
     width: 455px;
     margin-bottom: 90px;
+    min-height: 140px;
 }
 
 @media (min-width:769px){
@@ -550,7 +550,7 @@ a.linkedin {
     .teasers {
         padding: 60px 0 5px 0;
     }
-    .block-teaser h2 {
+    .heading-teaser {
         font-size: 22px;
     }
     .block-teaser p {
