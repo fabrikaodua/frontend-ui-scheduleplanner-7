@@ -7,7 +7,7 @@ install:
 script:
   - npm run lint
   - npm test
- notifications:
+notifications:
     slack: 
       on_pull_requests: false
       rooms:
