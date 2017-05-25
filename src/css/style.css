@@ -33,6 +33,12 @@ summary {
     font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+    font-family: 'Arial Italic';
+    src: url('../fonts/Arial Italic.ttf')format(truetype);
+    font-style: normal;
+	font-weight: normal;
+}
 body {
     height: 100%;
     font-family: 'Arial Regular', 'MyriadPro-Bold','MyriadPro-Regular','Arial Italic', 'Arial', 'Verdana', 'Tahoma', sans-serif;
@@ -51,8 +57,7 @@ body {
 -----------------------------------*/
 h2,
 h3,
-h4,
-h5 {
+h4 {
     font-family: 'Arial Regular', 'Arial', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -79,12 +84,6 @@ h4 {
     line-height: 36px;
     letter-spacing: 0;  
 }
-h5 {
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0;  
-    color:#8f4f35;
-}
 
 a {
     text-decoration: none;
@@ -101,6 +100,7 @@ p {
     font-weight: normal;
     font-style: normal;
     line-height: 28px;
+    color:#3e3e3e;
 }
 .article p {
     font-size: 16px;
@@ -109,13 +109,24 @@ p {
     letter-spacing: 0;
     color:#575757;
 }
-blockquote {
+.quote .blockquote {
     font-size: 16px;
+    font-family: 'Arial Regular', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #3e3e3e;
+}
+
+.quote .by-line {
     font-family: 'Arial Italic', 'Arial', sans-serif;
     font-weight: normal;
     font-style: italic;
+    font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0;
+    letter-spacing: 0;  
+    color:#8f4f35;
 }
 /* Header*/
 
