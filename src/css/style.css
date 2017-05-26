@@ -55,13 +55,7 @@ body {
 
 /*Typography
 -----------------------------------*/
-h2,
-h3,
-h4 {
-    font-family: 'Arial Regular', 'Arial', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
+
 h1 {
     font-size: 76.36px;
     font-family: 'MyriadPro-Bold', sans-serif;
@@ -69,6 +63,7 @@ h1 {
     font-style: normal;
     letter-spacing: 0;
 }
+
 h2 {
     font-size: 34px;
     line-height: 1.059;
@@ -76,13 +71,16 @@ h2 {
 
 h3 {
     font-size: 22px;
-    line-height: auto;  
+    font-weight: normal;
+    font-style: normal;
 }
 
 h4 {
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: 0;  
+    letter-spacing: 0;
+    font-weight: normal;
+    font-style: normal;  
 }
 
 a {
@@ -105,7 +103,7 @@ p {
 .article p {
     font-size: 16px;
     font-family: 'Arial Regular', 'Arial', sans-serif;
-    line-height: auto;
+    line-height: normal;
     letter-spacing: 0;
     color:#575757;
 }
@@ -263,7 +261,7 @@ a.linkedin {
 
 .body-top {
     background-image: url(../images/bg-body-top.jpg);
-    padding-bottom: 45px;
+    padding-bottom: 15px;
 }
 
 /*  Site title
@@ -342,11 +340,12 @@ a.linkedin {
         height: 100%;
         padding-top: 39px;
         padding-bottom: 60px;
+        box-sizing:border-box;
 }
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: url(../images/bg-body-top.jpg);
+        background: url(../images/bg-slider.jpg);
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -359,8 +358,7 @@ a.linkedin {
         -webkit-box-align: center;
         -ms-flex-align: center;
         -webkit-align-items: center;
-        align-items: center;
-         
+        align-items: center;   
     }
 
     .swiper-slide img {
@@ -370,24 +368,27 @@ a.linkedin {
    
     .swiper-pagination .swiper-pagination-bullet{
         opacity: 0.5;
+        width: 12px;
+        height: 12px;
     }
+    
     .swiper-pagination .swiper-pagination-bullet-active {
         background-color: #d65600;
         opacity:1;
     }
-@media(max-width:768px) {
+    @media(max-width:768px) {
     .swiper-slide img {
         width: 450px;
         height: 330px;
+        }
     }
-}
 
-@media(max-width:420px) {
+    @media(max-width:420px) {
     .swiper-slide img {
         width: 330px;
         height: 240px;
-    }
-}    
+        }
+    }    
 /* Image Slider END
 -----------------------------------------------------------------------------*/
 
@@ -410,6 +411,7 @@ a.linkedin {
     color: white;
     text-decoration: none;
     padding: 10px 10px 10px 30px;
+    background: #878787;
     background: hsla(0, 0%, 53%, 1);
     position: relative;
     display: block;
@@ -422,6 +424,7 @@ a.linkedin {
     height: 0;
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
+    border-left: #878787;
     border-left: 15px solid hsla(0, 0%, 53%, 1);
     position: absolute;
     top: 50%;
@@ -453,20 +456,24 @@ a.linkedin {
 }
 
 .breadcrumb li:nth-child(n+2) a {
+    background: #a8a8a8;
     background: hsla(0, 0%, 66%, 1);
 }
 
 .breadcrumb li:nth-child(n+2) a:after {
+    border-left-color: #a8a8a8;
     border-left-color: hsla(0, 0%, 66%, 1);
 }
 
 .breadcrumb li:last-child a {
     color: white;
+    background: #a8a8a8;
     background: hsla(0, 0%, 66%, 1);
     padding-right: 15px;
 }
 
 .breadcrumb li:last-child a::after {
+    border-left-color: #a8a8a8;
     border-left-color: hsla(0, 0%, 66%, 1);
 }
 
