@@ -21,27 +21,18 @@ summary {
 }
 
 @font-face {
-    font-family: 'MyriadPro-Regular';
-    src: url('../fonts/MyriadPro-Regular.otf') format(opentype);
-    font-style: normal;
-	font-weight: normal;
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MYRIADPROREGULAR.eot');
+    src: url('../fonts/MYRIADPROREGULAR.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Regular.svg') format('svg'),
+        url('../fonts/MyriadPro-Regular.otf') format('opentype'),
+        url('../fonts/MYRIADPROREGULAR.woff') format('woff'),
+        url('../fonts/MYRIADPROREGULAR.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'MyriadPro-Bold';
-    src: url('../fonts/MyriadPro-Bold.otf')format(opentype);
-    font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-    font-family: 'Arial Italic';
-    src: url('../fonts/Arial Italic.ttf')format(truetype);
-    font-style: normal;
-	font-weight: normal;
-}
 body {
     height: 100%;
-    font-family: 'Arial Regular', 'MyriadPro-Bold','MyriadPro-Regular','Arial Italic', 'Arial', 'Verdana', 'Tahoma', sans-serif;
+    font-family: 'Arial Regular', 'Myriad Pro', 'Arial', 'Verdana', 'Tahoma', sans-serif;
     font-size: 18px;
     background-image: url(../images/bg-body.png);
 }
@@ -58,7 +49,7 @@ body {
 
 h1 {
     font-size: 76.36px;
-    font-family: 'MyriadPro-Bold', sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     font-weight: bold;
     font-style: normal;
     letter-spacing: 0;
@@ -94,22 +85,19 @@ a:hover {
 
 p {
     font-size: 18px;
-    font-family: 'Arial Regular', 'Arial', sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 28px;
     color:#3e3e3e;
 }
-.article p {
+.information p {
     font-size: 16px;
-    font-family: 'Arial Regular', 'Arial', sans-serif;
     line-height: normal;
     letter-spacing: 0;
     color:#575757;
 }
-.quote .blockquote {
+.blockquote {
     font-size: 16px;
-    font-family: 'Arial Regular', 'Arial', sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 24px;
@@ -117,8 +105,7 @@ p {
     color: #3e3e3e;
 }
 
-.quote .by-line {
-    font-family: 'Arial Italic', 'Arial', sans-serif;
+.by-line {
     font-weight: normal;
     font-style: italic;
     font-size: 18px;
@@ -508,8 +495,7 @@ a.linkedin {
     text-align: left;
 }
 .data {
-font-family: Arial, Helvetica, sans-serif;
- font-size: 14px;
+font-size: 14px;
 margin-bottom: 20px;
 color: #717171;
 }
