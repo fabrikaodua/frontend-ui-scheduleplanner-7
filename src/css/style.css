@@ -844,15 +844,17 @@ p.speech:after {
 }
 
 @media(min-width:992px) {
-    .quotes {
-    padding-right: 20px;
-    }
 
     .quotes .quote {
         display: inline-block;
+        vertical-align: top;
         box-sizing: border-box;
-        width: 290px;
-        padding-left: 20px;
+        width: 302px;
+        margin-right: 20px;
+    }
+    
+    .quotes .quote:nth-child(3n) {
+        margin-right: 0;
     }
 }
 /* Quotes section End
