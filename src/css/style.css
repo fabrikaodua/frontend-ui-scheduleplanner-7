@@ -776,7 +776,7 @@ p.speech:after {
 .features .features-item::before {
     position: absolute;
     width: 60px;
-    height: 60px;
+    height: auto;
     text-align: center;
     top: -12px;
     left: 0;
