@@ -143,34 +143,40 @@
 	<!-- .wrapper -->
 <footer class="footer">
 	<div class="content-wrapper">
-		<div class="connect">
-			<h3>Connect</h3>
-			<div class="social-links">
-				<ul>
-					<li><a href="http://plus.google.com/" class="social google-plus" target="_blank">1</a></li>
-					<li><a href="http://twitter.com/" class="social twitter" target="_blank">2</a></li>
-					<li><a href="http://facebook.com/" class="social facebook" target="_blank">3</a></li>
-					<li><a href="https://www.linkedin.com/" class="social linkedin" target="_blank">4</a></li>
-				
-				</ul>
+		<div class ="clear">
+			<div class="connect float-left">
+				<div class="clear">
+					<div class="social-links float-left">
+						<h3>Connect</h3>
+						<ul>
+							<li><a href="http://plus.google.com/" class="social google-plus" target="_blank"></a></li>
+							<li><a href="http://twitter.com/" class="social twitter" target="_blank"></a></li>
+							<li><a href="http://facebook.com/" class="social facebook" target="_blank"></a></li>
+							<li><a href="https://www.linkedin.com/" class="social linkedin" target="_blank"></a></li>
+						</ul>
+					</div>
+					<div class="subscribe-form float-left">
+						<p>Subscribe to receive INTERSOG updates</p>
+						<form id="application" action="application.php" method="POST" name="application">
+							<input class="applicationEmail" name="email" type="email" maxlength="20">
+							<button class="applicationButton" type="submit" form="application">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>	
+			<div class="partners float-left">
+				<h3>Our partners</h3>
+				<img class="footer-logo comboapp" src="./images/footer-logo-comboapp.png" alt="logo-comboapp">
+				<img class="footer-logo digi" src="./images/footer-logo-digi.png" alt="logo-digi">
 			</div>
-			<p>Subscribe to receive INTERSOG updates</p>
-			<form id="application" action=" application.php" method="POST" name=" application ">
-				<input class="applicationEmail" name="email" type="email" maxlength="20">
-				<button class="applicationButton" type="submit" form="application">Subscribe</button>
-			</form>
-		</div>	
-		<div class="partners">
-			<h3>Our partners</h3>
-			<img class="footer-logo comboapp" src="./images/footer-logo-comboapp.png" alt="logo-comboapp">
-			<img class="footer-logo digi" src="./images/footer-logo-digi.png" alt="logo-digi">
-			<span>&copy; INTERSOG 2005-2012</span>
+		</div>
+		<div class="copyright">
+			&copy; INTERSOG 2005-2012
 		</div>
 	</div>
 </footer>
-	<!-- .footer -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
-		<script src="index.js"></script>
+<!-- .footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+<script src="index.js"></script>
 </body>
-
 </html>
