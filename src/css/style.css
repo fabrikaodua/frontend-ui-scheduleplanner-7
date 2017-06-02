@@ -298,7 +298,7 @@ a.linkedin {
 -----------------------------------------------------------------------------*/
 
 .body-top {
-    background-image: url(../images/bg-body-top.jpg);
+    background-image: url(../images/bg-bodytop.jpg);
     padding-bottom: 15px;
 }
 
@@ -383,7 +383,7 @@ a.linkedin {
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: url(../images/bg-slider.jpg);
+        /*background: url(../images/bg-slider.jpg);*/
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -860,6 +860,10 @@ p.speech:after {
 -----------------------------------------------------------------------------*/
 .quotes {
     background: rgb(248,247,243);
+    border-bottom: 6px solid rgb(248,247,243);
+    border-image-source:  url(../images/quotes-border.png);
+    border-image-slice: 21 6;
+    border-image-repeat: repeat;
 }
 
 .quotes .quote{
@@ -895,15 +899,18 @@ p.speech:after {
 }
 
 @media(min-width:992px) {
+    .quotes .quotes-wrapper {
+        margin-right: -32px;
+    }
 
     .quotes .quote {
         display: inline-block;
         vertical-align: top;
         box-sizing: border-box;
-        width: 302px;
+        width: 296px;
         margin-right: 20px;
     }
-    
+
     .quotes .quote:nth-child(3n) {
         margin-right: 0;
     }
