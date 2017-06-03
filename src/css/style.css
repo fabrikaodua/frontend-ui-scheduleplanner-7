@@ -61,9 +61,11 @@ h2 {
 }
 
 h3 {
+    font-family: 'Myriad Pro';
     font-size: 22px;
     font-weight: normal;
     font-style: normal;
+    color: #dbdbdb;
 }
 
 h4 {
@@ -152,10 +154,7 @@ p {
 	padding-top: 45px;
 	box-sizing: border-box;
 }
-.footer h3 {
-	color: #dbdbdb;
-	font-family: 'Myriad Pro';
-}
+
 .footer .social-links{
 	width: 235px;
 }
