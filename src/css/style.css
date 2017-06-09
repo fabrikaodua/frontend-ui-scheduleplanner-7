@@ -446,11 +446,15 @@ p {
 -----------------------------------------------------------------------------*/
 /* Blog posts
 /*-----------------------------------------------------------------------------*/
-.blog {
+.blog-post {
     display: inline-block;
     margin-left: 30px;
     overflow: hidden;
     text-align: left;
+}
+.blog-post h2 {
+ font-size: 24px;
+ margin-bottom: 20px;
 }
 .data {
 font-size: 14px;
@@ -480,23 +484,8 @@ margin: 0px 10px 10px 0;
     padding: 6px 15px;
     margin-bottom: 20px;
 }
-/*p.speech {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  background-color: #fff;
-  border: 8px solid #666;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 4px #888;
-  -moz-box-shadow: 2px 2px 4px #888;
-  box-shadow: 2px 2px 4px #888;
-}
 
-p.speech:after {
+/*p.speech:after {
   content: ' ';
   position: absolute;
   width: 0;
@@ -522,17 +511,26 @@ p.speech:after {
     overflow: hidden;
     text-align: left;
     padding: 40px 0px 40px;
+    width: 400px;
 }
 .navigation .navigation__menu{
      display: inline-block;
      padding: 10px 0px 10px 0px;
-    width: 100%;
+     width: 100%;
 }
-.navigation .navigation__menu li{
+.navigation .navigation__menu .image-left,
+.navigation .navigation__menu .image-right {
     font-size: 24px;
     padding: 0px 10px 0px 10px;
     float: left;
-
+}
+.navigation .navigation__menu .image-left:before {
+     padding: 0px 10px 0px 0px;
+    content: url(../images/navigation_left.png);
+}
+.navigation .navigation__menu .image-right::after {
+     padding: 0px 0px 0px 10px;
+    content: url(../images/navigation_right.png);
 }
 .navigation .navigation__menu a {
     color: #4b4b4b;
@@ -572,7 +570,8 @@ p.speech:after {
           .navigation .navigation__menu {
               padding: 8px 0px 8px 0px;
           }
-          .navigation .navigation__menu li {
+          .navigation .navigation__menu .image-left,
+          .navigation .navigation__menu .image-right  {
               font-size: 20px;
           }
           .pagination .navigation-list li {
@@ -580,12 +579,13 @@ p.speech:after {
           }
 }
 
-@media(max-width:420px) {
+@media(max-width:425px) {
      .pagination{
         text-align: center;
         padding: 20px 0px 20px;
           }
-          .navigation .navigation__menu li {
+          .navigation .navigation__menu .image-left,
+          .navigation .navigation__menu .image-right  {
               font-size: 18px;
           }
           .pagination .navigation-list li {
