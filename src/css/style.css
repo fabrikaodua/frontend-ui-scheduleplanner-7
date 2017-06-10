@@ -485,7 +485,7 @@ margin: 0px 10px 10px 0;
     margin-bottom: 20px;
 }
 
-/*p.speech:after {
+p.speech:after {
   content: ' ';
   position: absolute;
   width: 0;
@@ -494,7 +494,7 @@ margin: 0px 10px 10px 0;
   top: 100px;
   border: 15px solid;
   border-color: #fff transparent transparent #fff;
-}*/
+}
 
 
 
@@ -506,8 +506,6 @@ margin: 0px 10px 10px 0;
 /* Pagination
 /*-----------------------------------------------------------------------------*/
 .pagination {
-    display: inline-block;
-    margin-left: 30px;
     overflow: hidden;
     text-align: left;
     padding: 40px 0px 40px;
@@ -581,8 +579,10 @@ margin: 0px 10px 10px 0;
 
 @media(max-width:425px) {
      .pagination{
-        text-align: center;
+        margin: 0 auto;
+        width: 250px;
         padding: 20px 0px 20px;
+        text-align: center;
           }
           .navigation .navigation__menu .image-left,
           .navigation .navigation__menu .image-right  {
