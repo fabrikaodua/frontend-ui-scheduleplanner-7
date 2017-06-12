@@ -62,7 +62,7 @@ summary {
 
 body {
     height: 100%;
-    font-family: 'Arial Regular', 'Arial Italic', 'Myriad Pro Regular', 'Myriad Pro Bold' 'Arial', 'Verdana', 'Tahoma', sans-serif;
+    font-family: 'Arial Regular', 'Arial Italic', 'Myriad Pro Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', 'Tahoma', sans-serif;
     font-size: 18px;
     background-image: url(../images/bg-body.png);
 }
@@ -87,7 +87,7 @@ h1 {
 
 h2 {
     font-family: 'Arial Regular';
-    font-size: 24px;
+    font-size: 34px;
     line-height: 1.059;
     color:#2a2a2a;
     margin-bottom: 5px;
