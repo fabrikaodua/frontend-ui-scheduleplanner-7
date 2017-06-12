@@ -21,18 +21,48 @@ summary {
 }
 
 @font-face {
-    font-family: 'Myriad Pro';
-    src: url('../fonts/MYRIADPROREGULAR.eot');
-    src: url('../fonts/MYRIADPROREGULAR.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MyriadPro-Regular.svg') format('svg'),
-        url('../fonts/MyriadPro-Regular.otf') format('opentype'),
-        url('../fonts/MYRIADPROREGULAR.woff') format('woff'),
-        url('../fonts/MYRIADPROREGULAR.ttf') format('truetype');
+		font-family: 'Arial Regular';
+		src: url('../fonts/arialregular.eot');
+		src: url('../fonts/arialregular.eot?#iefix')format('embedded-opentype'),
+		url('../fonts/arialregular.woff') format('woff'),
+		url('../fonts/arialregular.ttf') format('truetype');
+		font-style: normal;
+		font-weight: normal;
+	}
+
+@font-face {
+	font-family: 'Arial Italic';
+	src: url('../fonts/arialitalic.eot');
+	src: url('../fonts/arialitalic.eot?#iefix')format('embedded-opentype'),
+	url('../fonts/arialitalic.woff') format('woff'),
+	url('../fonts/arialitalic.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+	}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../fonts/myriadpro-regular.eot');
+    src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/myriadpro-regular.woff') format('woff'),
+    url('../fonts/myriadpro-regular.ttf') format('truetype');
+    font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('../fonts/myriadpro-bold.eot');
+    src: url('../fonts/myriadpro-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/myriadpro-bold.woff') format('woff'),
+    url('../fonts/myriadpro-bold.ttf') format('truetype');
+    font-style: normal;
+	font-weight: normal;
 }
 
 body {
     height: 100%;
-    font-family: 'Arial Regular', 'Myriad Pro', 'Arial', 'Verdana', 'Tahoma', sans-serif;
+    font-family: 'Arial Regular', 'Arial Italic', 'Myriad Pro Regular', 'Myriad Pro Bold' 'Arial', 'Verdana', 'Tahoma', sans-serif;
     font-size: 18px;
     background-image: url(../images/bg-body.png);
 }
@@ -49,26 +79,31 @@ body {
 
 h1 {
     font-size: 76.36px;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: 'Myriad Pro Bold';
     font-weight: bold;
     font-style: normal;
     letter-spacing: 0;
 }
 
 h2 {
-    font-size: 34px;
+    font-family: 'Arial Regular';
+    font-size: 24px;
     line-height: 1.059;
+    color:#2a2a2a;
+    margin-bottom: 5px;
 }
 
 h3 {
-    font-family: 'Myriad Pro';
+    font-family: 'Myriad Pro Regular';
     font-size: 22px;
     font-weight: normal;
     font-style: normal;
     color: #dbdbdb;
+    margin-bottom: 24px;
 }
 
 h4 {
+    font-family: 'Arial Regular';
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0;
@@ -92,12 +127,22 @@ p {
     line-height: 28px;
     color:#3e3e3e;
 }
+
 .information p {
     font-size: 16px;
     line-height: normal;
     letter-spacing: 0;
     color:#575757;
+    text-indent: 15px;
+    margin-bottom: 20px;
 }
+
+.data {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #717171;
+}
+
 .blockquote {
     font-size: 16px;
     font-weight: normal;
@@ -108,6 +153,7 @@ p {
 }
 
 .by-line {
+    font-family: 'Arial Italic';
     font-weight: normal;
     font-style: italic;
     font-size: 18px;
@@ -115,6 +161,8 @@ p {
     letter-spacing: 0;  
     color:#8f4f35;
 }
+
+
 /* Header*/
 
 .header {
@@ -345,6 +393,7 @@ p {
     list-style: none;
     overflow: hidden;
     font-size: 14px;
+    margin-bottom: 35px;
 }
 
 .breadcrumb li {
@@ -452,28 +501,17 @@ p {
     overflow: hidden;
     text-align: left;
 }
-.blog-post h2 {
- font-size: 24px;
- margin-bottom: 20px;
-}
-.data {
-font-size: 14px;
-margin-bottom: 20px;
-color: #717171;
-}
+
 .information {
-margin-bottom: 20px;
-color: #575757;
+    
 }
-.information p {
-    text-indent: 20px;
-}
+
 .data_caption {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .image-blog {
- float:left;
-margin: 0px 10px 10px 0;
+    float:left;
+    margin: 0px 10px 10px 0;
 }
 .comment {
     display: inline-block;
@@ -844,7 +882,7 @@ p.speech:after {
 }
 .footer .subscribe-form p {
 	font-size: 12px;
-	font-family: 'Myriad Pro';
+	font-family: 'Myriad Pro Regular';
 	color: #b2b2b2;
 	margin-bottom: 10px;
 }
@@ -875,9 +913,6 @@ p.speech:after {
     font-size: 12px;
 }
 
-.footer .footer-heading {
-	margin-bottom: 24px;
-}
 .footer .float-left {
 	float: left;
 }
