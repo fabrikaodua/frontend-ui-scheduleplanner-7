@@ -501,13 +501,28 @@ p {
     overflow: hidden;
     text-align: left;
 }
-
+.blog-post h2 {
+ font-size: 24px;
+ margin-bottom: 20px;
+}
+.data {
+font-size: 14px;
+margin-bottom: 20px;
+color: #717171;
+}
+.information {
+margin-bottom: 20px;
+color: #575757;
+}
+.information p {
+    text-indent: 20px;
+}
 .data_caption {
-    margin-bottom: 20px;
+margin-bottom: 20px;
 }
 .image-blog {
-    float:left;
-    margin: 0px 10px 10px 0;
+ float:left;
+margin: 0px 10px 10px 0;
 }
 .comment {
     display: inline-block;
@@ -516,23 +531,29 @@ p {
     border-radius: 5px;
     text-decoration: none;
     padding: 6px 15px;
-    margin-bottom: 20px;
 }
-
-p.speech:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 38px;
-  top: 100px;
-  border: 15px solid;
-  border-color: #fff transparent transparent #fff;
+.triangle {
+    width: 20px;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+    padding: 0 0 0 10px;
+	box-shadow: 0 16px 10px -17px rgba(91,91,91,.2);
+	box-shadow: 0 13px 10px -17px rgba(91, 91, 91, .2);
 }
-
-
-
-
+.triangle:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 20px solid #616161; 
+	border-right: 20px solid transparent; 
+    /* Prefixes... */
+	/*top: 80px;
+	left: 25px;
+	// box-shadow: -1px -1px 10px -2px rgba(91,91,91,.2);
+	box-shadow: -6px -1px 10px -2px rgba(91, 91, 91, .2);*/
+}
 /* Blog posts
 /*-----------------------------------------------------------------------------*/
 
