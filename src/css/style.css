@@ -1,4 +1,4 @@
-/* Global style
+ /* Global style
 -----------------------------------------------------------------------------*/
 
 html {
@@ -857,8 +857,10 @@ margin: 0px 10px 10px 0;
     text-decoration: none;
     border-radius: 25px;
     border: 2px solid #fff;
+    box-shadow: 0 0 2px rgba(122,122,122,0.5);
     font-size: 18px;
     color: #fff;
+    text-shadow: 0 1px 0 rgba(20,20,20,0.5);
 }
 
 @media(min-width:992px) {
