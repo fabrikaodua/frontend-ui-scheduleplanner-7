@@ -265,10 +265,11 @@ p {
 
 .site-title .site-title-heading {
     position: relative;
-    top: 40px;
+    top: 45px;
     margin-left: 226px;
-    background: linear-gradient(to top, #983904 50%, transparent);
     white-space: nowrap;
+    color: #983904; 
+    background: -webkit-linear-gradient(bottom, #983904 50%, transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -279,42 +280,42 @@ p {
     bottom: 20px;
 }
 
-@media(max-width:768px) {
+@media(max-width:1198px) {
     .site-title img {
         margin-top: 34px;
         margin-left: 18px;
     }
     .site-title .site-title-heading {
-        top: 38px;
+        top: 42px;
         margin-left: 140px;
+        font-size: 65.45px;
     }
     .site-title .site-title-heading::after {
         display: none;
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:766px) {
     .site-title img {
         margin-top: 30px;
         margin-left: 0;
     }
     .site-title .site-title-heading {
-        top: 32px;
+        top: 36px;
         margin-left: 84px;
-    }
-    .site-title .site-title-heading::after {
-        display: none;
+        font-size: 36px;
     }
 }
 
-@media(max-width:320px) {
+@media(max-width:418px) {
     .site-title img {
         margin-top: 14px;
         margin-left: 0;
     }
     .site-title .site-title-heading {
-        top: 24px;
+        top: 20px;
         margin-left: 58px;
+        font-size: 26px;
     }
     .site-title .site-title-heading::after {
         display: none;
