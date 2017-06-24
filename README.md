@@ -1,6 +1,6 @@
 # Вёрстка адаптивного макета с использованиеим HTML+CSS. 
 
-[![Build Status](https://travis-ci.com/fabrikaodua/frontend-ui-scheduleplanner-7.svg?token=SFtUH4jzCXwsGcdDpLyU&branch=master)](https://travis-ci.com/fabrikaodua/frontend-ui-scheduleplanner-7)
+[![Build Status](https://travis-ci.org/fabrikaodua/frontend-ui-scheduleplanner-7.svg?branch=master)](https://travis-ci.org/fabrikaodua/frontend-ui-scheduleplanner-7)
 
 Делать карусель не нужно. Любые задачи на JavaScript можно игнорировать. Минимальная поддерживаемая ширина экрана 320px, максимальная - 1920px. Рекомендуется приступать к вёрстке начиная с ширины 320.
 
