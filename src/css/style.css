@@ -20,25 +20,6 @@ summary {
     display: block;
 }
 
-@font-face {
-		font-family: 'Arial Regular';
-		src: url('../fonts/arialregular.eot');
-		src: url('../fonts/arialregular.eot?#iefix')format('embedded-opentype'),
-		url('../fonts/arialregular.woff') format('woff'),
-		url('../fonts/arialregular.ttf') format('truetype');
-		font-style: normal;
-		font-weight: normal;
-	}
-
-@font-face {
-	font-family: 'Arial Italic';
-	src: url('../fonts/arialitalic.eot');
-	src: url('../fonts/arialitalic.eot?#iefix')format('embedded-opentype'),
-	url('../fonts/arialitalic.woff') format('woff'),
-	url('../fonts/arialitalic.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-	}
 
 @font-face {
     font-family: 'Myriad Pro Regular';
@@ -62,7 +43,7 @@ summary {
 
 body {
     height: 100%;
-    font-family: 'Arial Regular', 'Arial Italic', 'Myriad Pro Regular', 'Myriad Pro Bold', 'Arial', 'Verdana', 'Tahoma', sans-serif;
+    font-family: 'Arial', 'Myriad Pro Regular', 'Myriad Pro Bold', 'Verdana', 'Tahoma', sans-serif;
     font-size: 18px;
     background-image: url(../images/bg-body.png);
 }
@@ -86,7 +67,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Arial Regular';
     font-size: 34px;
     line-height: 1.059;
     color:#2a2a2a;
@@ -103,7 +83,6 @@ h3 {
 }
 
 h4 {
-    font-family: 'Arial Regular';
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0;
@@ -133,7 +112,7 @@ p {
     line-height: normal;
     letter-spacing: 0;
     color:#575757;
-    text-indent: 15px;
+    text-indent: 20px;
     margin-bottom: 20px;
 }
 
@@ -153,7 +132,6 @@ p {
 }
 
 .by-line {
-    font-family: 'Arial Italic';
     font-weight: normal;
     font-style: italic;
     font-size: 18px;
@@ -503,18 +481,21 @@ p {
     text-align: left;
 }
 .blog-post .blog-heading {
- font-size: 24px;
- margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
+
 .data {
-font-size: 14px;
-margin-bottom: 20px;
-color: #717171;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #717171;
 }
+
 .information {
-margin-bottom: 20px;
-color: #575757;
+    margin-bottom: 20px;
+    color: #575757;
 }
+
 .information p {
     text-indent: 20px;
 }
