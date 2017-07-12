@@ -870,7 +870,7 @@ margin: 0 10px 10px 0;
         flex-direction: column;
         vertical-align: top;
         box-sizing: border-box;
-        /* width: 296px; */
+        width: 33%; 
         margin-right: 20px;
     }
 
