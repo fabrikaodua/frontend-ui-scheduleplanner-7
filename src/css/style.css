@@ -853,7 +853,7 @@ margin: 0px 10px 10px 0;
     box-sizing: border-box;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0; 
     text-decoration: none;
     border-radius: 25px;
     border: 2px solid #fff;
@@ -865,15 +865,28 @@ margin: 0px 10px 10px 0;
 
 @media(min-width:992px) {
     .quotes .quotes-wrapper {
-        margin-right: -32px;
+        /* margin-right: -32px; */
+        display: flex;
     }
 
     .quotes .quote {
-        display: inline-block;
+        /* display: inline-block; */
+        position: relative; 
+        flex-direction: column;
         vertical-align: top;
         box-sizing: border-box;
-        width: 296px;
+        /* width: 296px; */
         margin-right: 20px;
+    }
+
+    .quotes .blockquote {
+         margin-bottom: 30px; 
+    }
+    
+    .quotes .by-line {
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 
     .quotes .quote:nth-child(3n) {
